@@ -1,13 +1,45 @@
-# VaultAI Android starter
+# VaultAI
 
-This project packages the supplied Kotlin/Jetpack Compose starter into an Android app and uses the VaultAI logo as its launcher icon. It is currently a starter screen, not a complete offline AI assistant.
+VaultAI is an Android personal-assistant project designed to grow into
+a futuristic assistant with offline AI, voice interaction, and customizable
+wake-word activation.
 
-## Build APK with GitHub Actions
-1. Create a GitHub repository named `VaultAI`.
-2. Upload the contents of this folder to the repository root.
-3. Open the **Actions** tab and enable workflows if GitHub asks.
-4. Select **Build VaultAI APK** and press **Run workflow**, or push to `main`/`master`.
-5. Open the completed workflow run, scroll to **Artifacts**, and download `VaultAI-debug-apk`.
-6. Extract the ZIP artifact to find `app-debug.apk`.
+## Current features
 
-The APK is a debug build for testing. It is not signed for Play Store release.
+- Dark futuristic-style interface
+- Customizable assistant name
+- Persistent assistant settings
+- Text input
+- Android speech-recognition integration
+- Text-to-speech responses
+- Android APK build configuration
+
+## Planned features
+
+- Local AI model integration
+- Offline question answering
+- Custom wake-word detection
+- Hands-free assistant activation
+- Display wake-up interface
+- AI model download manager
+- Privacy and microphone controls
+
+## Requirements
+
+- Android 8.0 or later
+- Android SDK 35 for building
+- Java 17
+- Gradle compatible with the Android Gradle Plugin
+
+## Build
+
+Use the configured GitHub Actions workflow to build a debug APK.
+
+## Important
+
+The current application does not yet contain an integrated AI model or
+a continuous custom wake-word detection engine. Speech recognition
+currently uses Android's recognition interface.
+
+A compatible local AI model and wake-word engine must be integrated
+before offline AI responses and hands-free wake-word activation will work.
